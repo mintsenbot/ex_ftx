@@ -1,4 +1,5 @@
 # ExFtx
+
 [![Build Status](https://github.com/fremantle-industries/ex_ftx/workflows/test/badge.svg?branch=main)](https://github.com/fremantle-industries/ex_ftx/actions?query=workflow%3Atest)
 [![hex.pm version](https://img.shields.io/hexpm/v/ex_ftx.svg?style=flat)](https://hex.pm/packages/ex_ftx)
 
@@ -83,15 +84,15 @@ https://docs.ftx.com/#overview
 - [ ] `GET /conditional_orders/{conditional_order_id}/triggers`
 - [ ] `GET /conditional_orders/history?market={market}`
 - [x] `POST /orders`
-- [ ] `POST /conditional_orders`
+- [x] `POST /conditional_orders`
 - [x] `POST /orders/{order_id}/modify`
 - [x] `POST /orders/by_client_id/{client_order_id}/modify`
-- [ ] `POST /conditional_orders/{order_id}/modify`
+- [x] `POST /conditional_orders/{order_id}/modify`
 - [ ] `GET /orders/{order_id}`
 - [ ] `GET /orders/by_client_id/{client_order_id}`
 - [x] `DELETE /orders/{order_id}`
 - [x] `DELETE /orders/by_client_id/{client_order_id}`
-- [ ] `DELETE /conditional_orders/{id}`
+- [x] `DELETE /conditional_orders/{id}`
 - [x] `DELETE /orders`
 
 #### Convert
@@ -138,7 +139,7 @@ https://docs.ftx.com/#overview
 - [ ] `POST /options/requests`
 - [ ] `DELETE /options/requests/{request_id}`
 - [ ] `GET /options/requests/{request_id}/quotes`
-- [ ] `POST  /options/requests/{request_id}/quotes`
+- [ ] `POST /options/requests/{request_id}/quotes`
 - [ ] `GET /options/my_quotes`
 - [ ] `DELETE /options/quotes/<quote_id>`
 - [ ] `POST /options/quotes/<quote_id>/accept`
