@@ -10,6 +10,10 @@ defmodule ExFtx.Markets.Show do
     |> parse_response()
   end
 
+  defp parse_response({:ok, %ExFtx.JsonResponse{success: false}}) do
+    {:error, :no_market}
+  end
+
   defp parse_response({:ok, %ExFtx.JsonResponse{success: true, result: market}}) do
     market
     |> Mapail.map_to_struct(ExFtx.Market, transformations: [:snake_case])
