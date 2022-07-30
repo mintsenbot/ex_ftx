@@ -14,7 +14,7 @@ defmodule ExFtx.Orders.CancelConditionalByOrderId do
   defp parse_response({:ok, %JsonResponse{success: true, result: result}}) do
     result
     |> case do
-      "Order queued for cancellation" -> :ok
+      "Order cancelled" -> :ok
       _ -> {:error, :unhandled_result}
     end
   end
